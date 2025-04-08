@@ -1,0 +1,9 @@
+h1 {
+  color: blue;
+  font-size: 2em;
+}
+.box {
+  background-color: red;
+  border: 10px solid black;
+  padding: 20px;
+}
