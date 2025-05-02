@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Monovision Studio</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="stylesheet" href="/src/css/styles.css" />
     </head>
     <body>
@@ -14,14 +15,13 @@
                     <h2 class="promo__subtitle">
                         Want some style on your photos?
                     </h2>
-                    <a href="#" class="btn">Portfolio</a>
+                    <a href="#portfolio" class="btn">Portfolio</a>
                     <div class="promo__address">
                         Location:
                         <address>
                             Everton Park, Block 2, Singapore 081002
                         </address>
                         <a href="tel:+6569964725">+6569964725</a>
-                        <img src="src/icons/Arrow.svg" alt="arrow logo" />
                     </div>
                 </div>
                 <ul class="keywords">
@@ -56,26 +56,18 @@
                         <div class="about__cervices">
                             <h2>All services</h2>
                             <ul class="about__list">
-                                <li>
+                                <li class="about__item-camera">
                                     Portrait Photography: Individual, Family,
                                     Corporate, Creative
-                                    <img
-                                        src="src/icons/Camera.svg"
-                                        alt="camera logo"
-                                    />
                                 </li>
                                 <li>
                                     Commercial Photography: Product, Fashion,
                                     Advertising
                                 </li>
-                                <li>
+                                <li class="about__item-edit">
                                     Photo Editing & Retouching: Color
                                     correction, Skin retouching, Background
                                     removal
-                                    <img
-                                        src="src/icons/Edit.svg"
-                                        alt="edit logo"
-                                    />
                                 </li>
                             </ul>
                         </div>
@@ -90,12 +82,9 @@
                     </div>
                 </div>
             </section>
-            <section class="works">
+            <section class="works" id="portfolio">
                 <div class="container">
-                    <h2 class="title">
-                        Our works
-                        <img src="src/icons/Underline.svg" alt="underline" />
-                    </h2>
+                    <h2 class="title">Our works</h2>
                     <div class="works__items">
                         <img
                             class="works__item"
@@ -127,10 +116,7 @@
             </section>
             <section class="inspiration">
                 <div class="container">
-                    <h2 class="title">
-                        Our inspiration
-                        <img src="src/icons/Underline.svg" alt="underline" />
-                    </h2>
+                    <h2 class="title">Our inspiration</h2>
                     <div class="inspiration__items">
                         <img
                             src="./src/img/desktop/man.jpg"
@@ -169,10 +155,7 @@
             </section>
             <section class="customers">
                 <div class="container">
-                    <h2 class="title">
-                        Our customers
-                        <img src="src/icons/Underline.svg" alt="underline" />
-                    </h2>
+                    <h2 class="title">Our customers</h2>
                     <div class="customers__items">
                         <img
                             src="src/img/desktop/logo-first-alliances.jpg"
@@ -192,14 +175,25 @@
         </main>
         <footer>
             <div class="container">
-                <div class="footer__icons">
-                    <img src="src/icons/facebook.svg" alt="facebook" /><img
-                        src="src/icons/tg.svg"
-                        alt="telegram"
-                    /><img src="src/icons/whatsapp.svg" alt="whats up" />
-                </div>
+                <ul class="footer__icons">
+                    <li>
+                        <a href="#" class="footer__link">
+                            <span class="icon-facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            <span class="icon-telegram"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">
+                            <span class="icon-whatsapp"></span>
+                        </a>
+                    </li>
+                </ul>
                 <address>Everton Park, Block 2, Singapore 081002</address>
-                <a href="tel:+6569964725">+6569964725</a>
+                <a class="footer__tel" href="tel:+6569964725">+6569964725</a>
             </div>
         </footer>
     </body>

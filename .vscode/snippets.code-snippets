@@ -25,5 +25,18 @@
 					"align-items: center;",
 			    "}"
 				]
+	},
+	"content" : {
+		"scope" : "css",
+		"prefix" : "content",
+		"body" : [
+			"content: \"\" ;",
+			"display: ${1|block,flex,grid|};",
+			"position: absolute;",
+			"width: $2rem;",
+			"height: $3rem;",
+			"${4|bottom,top|}: $5rem;",
+			"${6|left,right|}: $7rem;",	
+		]
 	}
 }
